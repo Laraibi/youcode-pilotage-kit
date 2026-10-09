@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./_confidentiel/**)",
+      "Edit(./_confidentiel/**)"
+    ]
+  }
+}

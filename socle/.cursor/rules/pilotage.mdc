@@ -1,0 +1,12 @@
+---
+description: Kit de pilotage — lecture minimale, rangement par phase, commandes du kit
+alwaysApply: true
+---
+
+Suivre `AGENTS.md` (règles communes à tous les agents) et `PROMO.md` (contexte de la promo). Rappels non négociables :
+
+- Démarrer par `PROMO.md` et `CURRENT.md` uniquement ; lire le reste via les index (README de sprint, `BILAN.md` des phases closes, fiches apprenants, `06_pilotage/decisions/INDEX.md`, bloc `## Résumé` des rapports).
+- Jamais `_confidentiel/`. Pas de `00_sources/legacy/**` ni de binaires sans demande explicite.
+- Quand l'utilisateur tape `/aide`, `/noter`, `/cadrage`, `/brief`, `/audit`, `/debrief`, `/point`, `/bilan` ou `/amorcer`, suivre `.claude/skills/<commande>/SKILL.md`.
+- Ranger selon `06_pilotage/organisation-documentaire.md` ; `CURRENT.md` remplacé, jamais empilé ; décision → fichier daté + ligne dans l'INDEX.
+- Fin de tâche : `bash scripts/check-organisation.sh`, puis commits atomiques.

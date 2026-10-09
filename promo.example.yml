@@ -1,0 +1,43 @@
+# Description de la promo : lu par scripts/installer-kit.py et par les commandes du kit.
+# Copier ce fichier à la racine du dépôt de la promo sous le nom promo.yml, puis le remplir.
+# Les dates sont au format AAAA-MM-JJ. Une valeur inconnue : écrire "à confirmer".
+
+promo:
+  nom: Promo-Exemple
+  parcours: Développeur Fullstack
+  annee: 2026-2027
+  formateur: Prénom Nom
+  campus: YouCode
+  pays_feries: MA
+
+# Plateformes où le formateur saisit des activités ou publie des briefs
+plateformes: [simplonline, youcode]
+
+# Outils d'agents utilisés par le formateur (claude, codex, cursor)
+agents: [claude]
+
+# Phases dans l'ordre. "dossier" est créé tel quel ; garder les préfixes 01_warmup et 02_sprints/.
+phases:
+  - id: warmup
+    titre: Warm-Up
+    dossier: 01_warmup
+    debut: 2026-08-31
+    fin: 2026-09-04
+  - id: sprint-01
+    titre: Sprint 1 — Fondamentaux Web
+    dossier: 02_sprints/sprint-01-fondamentaux-web
+    debut: 2026-09-07
+    fin: 2026-09-25
+  - id: sprint-02
+    titre: Sprint 2 — Backend & API
+    dossier: 02_sprints/sprint-02-backend-api
+    debut: 2026-09-28
+    fin: 2026-10-30
+
+# Règles de veille de la promo (prévalent sur les valeurs par défaut du kit)
+veilles:
+  jours: [mardi, mercredi, jeudi, vendredi]
+  moment: matin
+  modalite: binome
+  duree_minutes: 15
+  quiz: [kahoot, wayground]
